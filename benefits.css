@@ -1,0 +1,237 @@
+body {
+    font-family: 'Jaro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-weight: lighter;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Judul besar */
+h2 {
+    color: #2F5E02;
+    margin: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Subjudul */
+h3{
+    color: #56782f;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Why Choose Crypito?*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+  
+.container h2 {
+    font-size: 50px;
+    text-align: left;
+    padding-left: 20px;
+    color: #2F5E02;
+    font-family: 'Jaro', sans-serif;
+    margin-bottom: 10px;
+}
+  
+.benefits-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+  
+.benefit-box {
+    display: flex;
+    align-items: center; 
+    background-color: #d5dfcc;
+    border-radius: 10px;
+    padding:10px 10px; 
+    gap: 15px; 
+}
+
+.benefit-box:hover{
+    background-color: #c4d6b4;
+}
+
+.benefit-box .text h3 {
+    font-size: 30px; 
+    margin: 0 0 5px -10px;
+    color: #2F5E02;
+}
+
+.benefit-box .text p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+  
+.benefit-box .icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.benefit-box .icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* What our users say?*/
+.testimonials {
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -40px;
+}
+  
+.testimonials .testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.testimonials .testimonial-card {
+    background-color: #d5dfcc;
+    border-radius: 10px;
+    padding: 20px 20px 0px 20px;
+    width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonials .testimonial-card:hover{
+    background-color: #c4d6b4;
+}
+  
+.testimonials .testimonial-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 3; /* atau 3 / 2 tergantung proporsi yang kamu mau */
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+  
+.testimonials .testimonial-card h3 {
+    margin: 0;
+    color: #2F5E02;
+    font-size: 27px;
+    text-align: left;
+    font-weight: 700;
+}
+  
+.testimonials .testimonial-card .role {
+    margin: 0 0 8px 0;
+    font-size: 23px;
+    color: #2F5E02;
+    font-weight: 500;
+}
+  
+.testimonials .testimonial-card .quote {
+    font-size: 15px;
+    color: #2F5E02;
+    line-height: 1.5;
+    font-weight: 300;
+}
+ 
+.cta {
+    text-align: center;
+    background-color: white;
+    color: #2F5E02;
+    font-family: 'Jaro', sans-serif;
+}
+
+.cta h1 {
+    font-size: 50px;
+    margin: 0 0 10px 0;
+    color: #2F5E02;
+    text-transform: uppercase;
+}
+
+.cta p {
+    font-size: 24px;
+    margin: -10px 0 10px 0;
+    color: #56782f;
+}
+
+.cta .register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #2F5E02;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.cta .register-button:hover {
+    background-color: #56782f;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 60px;
+    }
+      
+    h3 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+    
+    .container h2 {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .benefits-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;                    
+        padding: 0 10px;                  
+      }
+
+    .benefit-box {
+        width: 100%;
+        max-width: 90vw;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-box .text h3{
+        margin: 0 0 10px;
+    }
+
+    .benefit-box .text p {
+        margin: 0;;
+        text-align: center;
+    }
+
+    .cta h1{
+        font-size: 30px;
+    }
+    .cta p {
+        font-size: 15px;
+    }
+}

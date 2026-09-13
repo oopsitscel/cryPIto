@@ -1,0 +1,175 @@
+body {
+    font-family: 'Jaro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-weight: lighter;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Judul besar */
+h2 {
+    color: #2F5E02;
+    margin: 0;
+    font-size: 100px;
+    text-align: center;
+}
+
+/* Subjudul */
+h3{
+    color: #56782f;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Box Form */
+.register-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #499302;
+    border-radius: 15px;
+    font-family: 'Jaro', sans-serif;
+}
+
+/* Label */
+.register-form label {
+    display: block;
+    margin: 3px;
+    color: #2F5E02;
+    font-size: 25px;
+}
+
+/* Input Field */
+.register-form input {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Jaro', sans-serif;
+    background-color: #a4c980;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.register-form input::placeholder {
+    color: black;
+}
+
+/* Agreement */
+.terms-container{
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.custom-checkbox {
+    appearance: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.terms-container label {
+    position: relative;
+    padding-left: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.terms-container label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2F5E02;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.custom-checkbox:checked + label::after {
+    content: "✓";
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2F5E02;
+}
+
+/* Button */
+.register-form button {
+    background-color: #499302;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Jaro', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* Back to home */
+main p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+p a {
+    display: inline-block;
+    font-size: 24px;         
+    color: #2F5E02;         
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #56782f;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 60px;
+    }
+  
+    h3 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .register-form {
+        margin: 0 10px;
+        max-width: 90%;
+    }
+
+    .register-form label {
+        font-size: 20px;
+    }
+
+    .register-form input {
+        font-size: 15px;
+    }
+
+    .custom-checkbox {
+        max-width: 20px;
+        height: 20px;
+    }
+
+    .terms-container label {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .register-form button, p a {
+        font-size: 20px;
+    }
+}

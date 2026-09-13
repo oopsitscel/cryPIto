@@ -1,0 +1,182 @@
+body {
+    font-family: 'Jaro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+
+/* Judul besar */
+h2 {
+    color: #2F5E02;
+    margin: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Subjudul */
+h3{
+    color: #56782f;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Hot Coins */
+.hot-coins {
+    padding: 15px 10px 35px 10px;
+    background-color: #d5dfcc;
+    text-align: center;
+    font-size: 60px;
+    color: #2F5E02;
+    border-top: 1px solid #2F5E02;
+    border-bottom: 1px solid #2F5E02;
+}
+
+.hot-coins-title, .all-coins-title {
+    text-align: center;
+    font-size: 50px;
+    color: #2F5E02;
+    font-family: 'Jaro', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+  
+.coin-list {
+    margin-top: -40px;
+    display: flex;
+    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.coin-item {
+    position: relative;
+    text-align: center;
+}
+
+.coin-item img {
+    width: 100%;
+    max-width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.coin-rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #2F5E02;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.coin-name {
+    margin: 5px 0 0;
+    color: #499302;
+}
+
+/* All Coins */
+.all-coins {
+    padding: 50px 20px;
+    text-align: center;
+}
+  
+.all-coins-title {
+    margin-bottom: 10px;
+}
+
+.coin-table {
+    justify-content: center;
+    overflow-x: auto;
+    margin: 0 100px;
+    margin-bottom: 20px;
+}
+  
+.coin-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    color: #2F5E02;
+}
+  
+.coin-table th,
+.coin-table td {
+    border: 1px solid #2F5E02;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+  
+.coin-table td img.coin-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+  
+.view-more-wrapper {
+    margin-top: 40px;
+}
+  
+.view-more-button {
+    font-family: 'Jaro', sans-serif;
+    font-size: 22px;
+    padding: 12px 30px;
+    background-color: #2F5E02;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+}
+  
+.view-more-button:hover {
+    background-color: #56782f;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 45px;
+    }
+  
+    h3 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .hot-coins-title, .all-coins-title {
+        margin-top: -10px;
+        font-size: 30px;
+    }
+
+    .coin-list {
+        font-size: 20px;
+    }
+    
+    .coin-table {
+        max-width: fit-content;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .coin-table th, .coin-table td {
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,386 @@
+body {
+    font-family: 'Jaro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-weight: lighter;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Judul besar */
+h2 {
+    color: #2F5E02;
+    margin: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Subjudul */
+h3{
+    color: #56782f;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.faq-title, .guides-title, .tipsntricks-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    flex-wrap: nowrap; 
+}
+
+.faq-title h4, .guides-title h4, .tipsntricks-title h4 {
+    font-size: 50px;
+    color: #2F5E02;
+    font-family: 'Jaro', sans-serif;
+    margin: 0;
+}
+
+.guides-subtitle, .tipsntricks-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 80px;
+    margin-top: -15px;
+    margin-bottom: 0;
+    color: #56782f;
+}
+  
+.icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 0px;
+    flex-shrink: 0;
+}
+
+/* FAQ */
+.faq-section {
+    padding: 5px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.accordion details {
+    background-color: #d5dfcc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accordion details:hover {
+    background-color: #c4d6b4;
+}
+
+.accordion summary {
+    font-size: 25px;
+    font-weight: 600;
+    height: 50px;
+    align-content: center;
+    cursor: pointer;
+    color: #2F5E02;
+    list-style: none;
+}
+  
+.accordion summary::before {
+    content: "+ ";
+    font-weight: bold;
+    color: #2F5E02;
+}
+
+.accordion[open] summary::before {
+    content: "- ";
+}
+  
+.accordion p {
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #2F5E02;
+    font-weight: 400;
+}
+
+/* Guides */
+.guides-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.guides-grid {
+    margin: -20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+}
+
+.guide-card {
+    background-color: #d5dfcc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.guide-card:hover {
+    background-color:#c4d6b4;;
+}
+
+.guide-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.guide-card h3 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 600;
+    color: #2F5E02;
+    margin: 0 0 10px;
+}
+
+.guide-card p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2F5E02;
+    margin: 0;
+}
+
+/* Tips & Tricks Section */
+.tips-section {
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F5E02;
+}
+
+.tips-grid {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tip-box {
+    background-color: #d5dfcc;
+    max-height: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.tip-box:hover {
+    background-color: #c4d6b4;
+}
+
+
+.tip-box img {
+    width: 100%;
+    max-height: 305px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tip-box h3 {
+    font-weight: 600;
+    text-align: left;
+    font-size: 40px;
+    color: #2F5E02;;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+  
+.tip-box p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2F5E02;
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+.tip-box.horizontal {
+    flex-direction: row;
+    align-items: center;
+    max-height: fit-content;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+  
+.tip-box.horizontal.reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.tip-box.horizontal h3, .tip-box.horizontal.reverse h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.tip-box.horizontal img, .tip-box.horizontal.reverse img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+  
+.tip-text, .tip-box {
+    flex: 1;
+}
+
+/* CTA Button */
+.faq-button, .guides-button, .tips-button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.guides-button{
+    margin-bottom: -35px;
+}
+
+.tips-button{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+  
+.faq-more, .guides-more, .tips-more {
+    background-color: #2F5E02;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Jaro', sans-serif;
+}
+  
+.faq-more:hover, .guides-more:hover, .tips-more:hover {
+    background-color: #56782f;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 60px;
+    }
+  
+    h3 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .faq-title, .guides-title, .tipsntricks-title {
+        padding-left: 20px;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        flex-wrap: nowrap; 
+    }
+
+    .faq-title h4, .guides-title h4, .tipsntricks-title h4 {
+        font-size: 26px;
+    }
+
+    .icon {
+        max-width: 100%;
+        overflow: hidden;
+        width: 25px;
+        height: 25px;
+        vertical-align: right;
+        margin-left: 0;
+    }
+
+    .guides-subtitle, .tipsntricks-subtitle {
+        padding-left: 20px;
+        padding-right: 5px;
+        font-size: 15px;
+    }
+
+    .guides-subtitle{
+        margin-bottom: -20px;
+    }
+
+    .accordion summary {
+        font-size: 18px;
+        height: fit-content;
+    }
+
+    .accordion p{
+        font-size: 15px;
+    }
+    
+    .guides-grid {
+        margin: 0px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .guide-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .guide-card h3 {
+        font-size: 20px;
+    }
+    
+    .guide-card p { 
+        font-size: 14px;
+    }
+    
+    .tips-grid {
+       grid-template-columns: 1fr;
+    }
+    
+    .tip-box p {
+        font-size: 15px;
+    }
+
+    .tip-box h3 {
+        font-size: 30px;
+    }
+
+    .tip-box.horizontal, .tip-box.horizontal.reverse {
+       flex-direction: column;
+       text-align: left;
+    }
+   
+    .tip-box.horizontal img, .tip-box.horizontal.reverse img{
+       width: 100%;
+       height: auto;
+       max-height: 250px;
+       margin-bottom: 12px;
+    }
+
+    .tip-box.horizontal h3, .tip-box.horizontal.reverse h3 {
+        font-size: 20px;
+    }
+
+    .faq-more, .guides-more, .tips-more {
+        font-size: 18px;
+    }
+}
